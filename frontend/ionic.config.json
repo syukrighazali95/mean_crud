@@ -1,0 +1,7 @@
+{
+  "name": "mall navigation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

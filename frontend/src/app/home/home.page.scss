@@ -1,0 +1,23 @@
+
+//background picture for home page
+.bg {
+  /* The image used */
+  // background-image: url("../../HomePic.png");
+  /* Full height */
+  background: white;
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+//"Choose your Mall" sentence
+.mall_choose {
+  font-family: "Open Sans"; 
+  font-size: 30px;
+  font-weight: bold;
+}
+
+

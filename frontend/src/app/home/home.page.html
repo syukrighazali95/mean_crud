@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="bg">
+    <div class= "row h-100">
+      <div class="col-sm-12 my-auto text-center">
+        <p class="mall_choose" style="color: black;">Please enter your mall</p>    
+        <div class="col-md-4 offset-md-4">
+          <form [formGroup]="mallForm" (ngSubmit)="queryMall()">
+            <ion-list class="form_list">
+              <ion-item class="item_list">
+                <ion-label class="label" position="floating" color="warning" stacked></ion-label>
+                <ion-input class="input" autocomplete="true" spellcheck="true" type="string" placeholder="Mall" formControlName="mallName"></ion-input>
+              </ion-item>
+            </ion-list>
+            <ion-button type="submit" expand="block" color="warning">Search</ion-button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</ion-content>

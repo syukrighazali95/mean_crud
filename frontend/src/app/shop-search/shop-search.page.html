@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="col-md-4 offset-md-4 bg">
+    <form [formGroup]="shopForm" (ngSubmit)="queryShop()">
+      <ion-list class="form_list">
+        <ion-item class="item_list">
+          <ion-label class="label" position="floating" color="warning" stacked></ion-label>
+          <ion-input class="input" autocomplete="true" spellcheck="true" type="string" placeholder="Source" formControlName="source"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-list class="form_list">
+        <ion-item class="item_list">
+          <ion-label class="label" position="floating" color="warning" stacked></ion-label>
+          <ion-input class="input" autocomplete="true" spellcheck="true" type="string" placeholder="Destination" formControlName="destination"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button type="submit" expand="block" color="warning">Search</ion-button>
+    </form>
+  </div>
+</ion-content>
