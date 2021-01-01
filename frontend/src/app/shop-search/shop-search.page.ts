@@ -58,12 +58,17 @@ export class ShopSearchPage implements OnInit {
     console.log(this.source);
     console.log(this.destination);
     this.originToDestination(this.source, this.destination);
-    let navigationExtras: NavigationExtras = {
-      queryParams: {
-        path: JSON.stringify(this.path)
-      }
-    };
-    this.router.navigate(['navigation'], navigationExtras);
+    if (this.path != undefined) {
+      let navigationExtras: NavigationExtras = {
+        queryParams: {
+          path: JSON.stringify(this.path)
+        }
+      };
+      this.router.navigate(['navigation'], navigationExtras);
+    } else {
+      console.log("Location is not found");
+    }
+    
   }
 
   originToDestination(source, destination){
